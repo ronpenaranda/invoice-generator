@@ -8,7 +8,7 @@ const App = () => {
     <Fragment>
       <Router>
         <Routes>
-          <Route path="/invoice" element={<CreateInvoice />} />
+          <Route path="/" element={<CreateInvoice />} />
         </Routes>
       </Router>
     </Fragment>
