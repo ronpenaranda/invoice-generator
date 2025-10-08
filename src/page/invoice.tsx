@@ -79,7 +79,7 @@ const CreateInvoice: React.FC = () => {
       </Modal>
       <header className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-2">
         <h1 className="text-xl sm:text-2xl font-bold text-gray-800 text-center sm:text-left">
-          Invoice Generator
+          Generate Invoice
         </h1>
       </header>
       <div className="bg-white p-4 sm:p-8 grid gap-4 border rounded-md">
