@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Button from "./button";
 
 interface ModalProps {
   isOpen: boolean;
@@ -48,19 +49,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
           </div>
         </div>
         <div className="flex justify-end gap-2 text-right sticky bottom-0 bg-white py-2 px-4">
-          <button
-            onClick={handlePrint}
-            className="px-4 py-1 text-sm bg-gray-400 text-white rounded hover:bg-blue-500"
-          >
-            Print
-          </button>
-
-          <button
-            onClick={onClose}
-            className="px-4 py-1 text-sm bg-gray-700 text-white rounded hover:bg-gray-600"
-          >
-            Close
-          </button>
+          <Button onClick={handlePrint} title="Print" />
+          <Button onClick={onClose} title="Close" />
         </div>
       </div>
     </div>

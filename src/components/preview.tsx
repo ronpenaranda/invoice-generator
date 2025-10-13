@@ -140,8 +140,9 @@ const Invoice: React.FC<InvoiceProps> = ({
       <div className="px-6">
         <p className="font-semibold text-gray-700 mb-1">Note:</p>
         <div className="border border-gray-300 rounded-md p-2 text-gray-600 min-h-16">
-          {note || "—"}
+          {note || ""}
         </div>
+        <p className="mb-1">please check items if in right quantity.</p>
       </div>
     </div>
   );
